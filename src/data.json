@@ -1,0 +1,30 @@
+{
+  "todos": [
+    {
+      "id": "17f851a4b0e",
+      "description": "Todo1",
+      "completed": true,
+      "priority": "Low",
+      "date": "2022-03-15"
+    },
+    {
+      "id": "27f851a4b0e",
+      "description": "Todo2",
+      "completed": true,
+      "priority": "Medium",
+      "date": "2022-03-16"
+    },
+    {
+      "id": "17d851a4b0e",
+      "description": "Todo3",
+      "completed": false,
+      "priority": "Medium"
+    },
+    {
+      "id": "17f85fa4b0e",
+      "description": "Todo4",
+      "completed": false,
+      "priority": "High"
+    }
+  ]
+}

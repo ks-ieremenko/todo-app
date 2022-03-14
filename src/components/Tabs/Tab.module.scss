@@ -1,0 +1,21 @@
+.tab {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  background-color: red;
+}
+
+.box {
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 22px;
+  color: #461f04;
+}
