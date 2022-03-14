@@ -12,7 +12,7 @@ type PropsT = {
 
 const Form: FC<PropsT> = ({ formik }) => {
   const priorities = Object.values(Priority);
-  
+
   return (
     <form onSubmit={formik.handleSubmit}>
       <InputField name="description" label="Description" formik={formik} />
@@ -23,7 +23,7 @@ const Form: FC<PropsT> = ({ formik }) => {
         label="Priority"
         handleChange={formik.handleChange}
       />
-      <Button color="primary" variant="contained" fullWidth type="submit" disabled={!formik.isValid || !formik.touched}>
+      <Button color="primary" variant="contained" fullWidth type="submit" disabled={!formik.isValid || !formik.dirty}>
         Submit
       </Button>
     </form>

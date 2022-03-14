@@ -1,6 +1,6 @@
 import React, { FC, SyntheticEvent, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { TiThSmall, TiTick } from "react-icons/ti";
 import { BiTimeFive } from "react-icons/bi";
 
@@ -50,7 +50,7 @@ const CustomizedTabs: FC = () => {
 
   return (
     <Box className={styles.box}>
-      <Typography className={styles.title}>Todo App</Typography>
+      <p className={styles.title}>Todo App</p>
       <Tabs value={tabValue} onChange={handleTabChange} centered>
         {tabHeaderConfig.map((item) => (
           <HeaderTab value={item.value} icon={item.icon} key={item.value} />
