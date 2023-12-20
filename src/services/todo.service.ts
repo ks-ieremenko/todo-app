@@ -3,7 +3,7 @@ import { TodoItemModel } from "../interfaces/todo.interface";
 
 export class TodoService {
   getTodos(): TodoItemModel[] {
-    let localStorageTodos = localStorage.getItem("todos");
+    const localStorageTodos = localStorage.getItem("todos");
     if (!localStorageTodos) {
       this.saveTodos(data.todos);
       return JSON.parse(localStorage.getItem("todos")!);

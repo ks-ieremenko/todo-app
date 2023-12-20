@@ -34,7 +34,7 @@ export const generateStatistics = (data: TodoItemModel[]) => {
   const result: DataInterface = { ...dayOfWeeks, ...datesWithCompletedTasks };
 
   const calculatedData: Array<TodoStatisticsModel> = [];
-  for (let key in result) {
+  for (const key in result) {
     calculatedData.push({
       name: key,
       count: result[key],
