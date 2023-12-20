@@ -23,7 +23,7 @@ const Todo: FC<PropsT> = ({ data }) => {
   const dispatch = useDispatch();
 
   const updateTodo = (todo: TodoItemModel) => {
-    const date = todo.completed ? null : moment().format("YYYY-MM-DD");
+    const date = todo.completed ? null : moment().format('YYYY-MM-DD');
     dispatch(updateTodoThunk({ ...todo, completed: !todo.completed, date }));
   };
 
