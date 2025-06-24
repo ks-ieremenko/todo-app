@@ -1,7 +1,4 @@
-import { TodoStateInterface } from "../store/todo";
-
-let cons = "hello"
-   
+import { TodoStateInterface } from "../store/todo";   
    
 export const loading = (state: TodoStateInterface) => ({
   ...state,
