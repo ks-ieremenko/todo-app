@@ -8,6 +8,8 @@ type PropsT = {
   data: TodoItemModel[];
 };
 
+const res = 'hello';
+
 const BarChartWidget: FC<PropsT> = ({ data }) => {
   return (
     <BarChart
